@@ -1,10 +1,13 @@
 
+
 # MonthSummariesResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**MonthSummariesWrapper**](MonthSummariesWrapper.md) |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**data** | [**MonthSummariesResponseData**](MonthSummariesResponseData.md) |  |  |
 
 
 

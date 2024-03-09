@@ -1,10 +1,13 @@
 
+
 # TransactionResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**TransactionWrapper**](TransactionWrapper.md) |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**data** | [**TransactionResponseData**](TransactionResponseData.md) |  |  |
 
 
 

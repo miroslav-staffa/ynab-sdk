@@ -1,10 +1,13 @@
 
+
 # PayeeLocationsResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**PayeeLocationsWrapper**](PayeeLocationsWrapper.md) |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**data** | [**PayeeLocationsResponseData**](PayeeLocationsResponseData.md) |  |  |
 
 
 

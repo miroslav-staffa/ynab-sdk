@@ -1,44 +1,51 @@
 # UserApi
 
-All URIs are relative to *https://api.youneedabudget.com/v1*
+All URIs are relative to *https://api.ynab.com/v1*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getUser**](UserApi.md#getUser) | **GET** /user | User info
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**getUser**](UserApi.md#getUser) | **GET** /user | User info |
 
 
-<a name="getUser"></a>
+<a id="getUser"></a>
 # **getUser**
 > UserResponse getUser()
 
 User info
 
-Returns authenticated user information.
+Returns authenticated user information
 
 ### Example
 ```java
 // Import classes:
-//import ynab.client.invoker.ApiClient;
-//import ynab.client.invoker.ApiException;
-//import ynab.client.invoker.Configuration;
-//import ynab.client.invoker.auth.*;
-//import ynab.client.api.UserApi;
+import org.openapitools.client.ApiClient;
+import org.openapitools.client.ApiException;
+import org.openapitools.client.Configuration;
+import org.openapitools.client.auth.*;
+import org.openapitools.client.models.*;
+import org.openapitools.client.api.UserApi;
 
-ApiClient defaultClient = Configuration.getDefaultApiClient();
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.ynab.com/v1");
+    
+    // Configure HTTP bearer authorization: bearer
+    HttpBearerAuth bearer = (HttpBearerAuth) defaultClient.getAuthentication("bearer");
+    bearer.setBearerToken("BEARER TOKEN");
 
-// Configure API key authorization: bearer
-ApiKeyAuth bearer = (ApiKeyAuth) defaultClient.getAuthentication("bearer");
-bearer.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//bearer.setApiKeyPrefix("Token");
-
-UserApi apiInstance = new UserApi();
-try {
-    UserResponse result = apiInstance.getUser();
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling UserApi#getUser");
-    e.printStackTrace();
+    UserApi apiInstance = new UserApi(defaultClient);
+    try {
+      UserResponse result = apiInstance.getUser();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling UserApi#getUser");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
 }
 ```
 
@@ -57,4 +64,10 @@ This endpoint does not need any parameter.
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | The user info |  -  |
+| **0** | An error occurred |  -  |
 

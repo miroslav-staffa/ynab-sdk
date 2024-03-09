@@ -1,10 +1,13 @@
 
+
 # PayeesResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**PayeesWrapper**](PayeesWrapper.md) |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**data** | [**PayeesResponseData**](PayeesResponseData.md) |  |  |
 
 
 

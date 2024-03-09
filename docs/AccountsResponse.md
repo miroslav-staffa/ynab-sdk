@@ -1,10 +1,13 @@
 
+
 # AccountsResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**AccountsWrapper**](AccountsWrapper.md) |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**data** | [**AccountsResponseData**](AccountsResponseData.md) |  |  |
 
 
 

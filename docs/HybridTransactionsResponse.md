@@ -1,10 +1,13 @@
 
+
 # HybridTransactionsResponse
 
+
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**HybridTransactionsWrapper**](HybridTransactionsWrapper.md) |  | 
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**data** | [**HybridTransactionsResponseData**](HybridTransactionsResponseData.md) |  |  |
 
 
 
